@@ -1,4 +1,5 @@
-[
+{
+    "lstFatura": [
     {
         "Valor" : 1000,
         "MesReferencia": 12,
@@ -18,5 +19,5 @@
         "Valor" : 1000,
         "MesReferencia": 9,
         "Status": 1
-    }
-]
+    }]
+}
