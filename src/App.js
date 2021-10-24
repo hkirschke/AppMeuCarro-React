@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderIndex from './componentes/HeaderIndex';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import MeuCarro from './componentes/MeuCarro';
-import Fatura from './componentes/Fatura';
+import Faturas from './componentes/Faturas';
 import Contrato from './componentes/Contrato';
 import NavBar from './componentes/NavBar';
 import './App.css';
@@ -17,8 +17,8 @@ function App() {
         <Route exact path="/">
           <MeuCarro />  
         </Route> 
-        <Route exact path="/Fatura">
-          <Fatura />  
+        <Route exact path="/Faturas">
+          <Faturas />  
         </Route> 
         <Route exact path="/Contrato">
           <Contrato />  
@@ -29,15 +29,5 @@ function App() {
     </div>
   );
 }
-
-//onIniciar={HeaderIndex.CarregaNomeTitular()} nomeProprietario={HeaderIndex.CarregaNomeTitular()} />
-
-{/* <HeaderIndex data={{CarregaNomeTitular}}/>  
-
-const CarregaNomeTitular = () => {  
- let data =require('./componentes/models/contrato.json');
- console.log(data);
- return data;
-}; */}
 
 export default App;
