@@ -2,7 +2,6 @@ import React from 'react';
 import CarroObj from './models/meucarro.json';
 
 const MeuCarro = () => {
-    console.log(CarroObj.ImagemCarro);
     return (
         <div id="tela1" class="component"> 
             <div class="componentContent">

@@ -3,21 +3,18 @@ import Fatura from './Fatura';
 
 const Faturas = () => { 
   return(
-    <div id="tela3" class="component"> 
-      <div class="componentContent">
-        <div class="card" >
-         <div class="card-header">
-           <h1 class="componentTitle">Faturas</h1>
+    <div className="component"> 
+      <div className="componentContent">
+        <div className="card" >
+         <div className="card-header">
+           <h1 className="componentTitle">Faturas</h1>
          </div>
-        <div class="card-body">
+        <div className="card-body">
            {FaturaObj.lstFatura.map((f) => (
               <Fatura
                key={f.MesReferencia}
                fatura={f} />
             ))} 
-        </div>
-        <div class="card-footer text-muted">
-          <p id="idContratante"class="card-text text-center"></p>
         </div>
       </div>
     </div>

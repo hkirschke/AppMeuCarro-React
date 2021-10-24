@@ -1,8 +1,8 @@
 import React from 'react';
 import ContratoObj from './models/contrato.json';
-import img from '../images/IconesMeuCarro/icon-108x108.png'
 
-const ImagemCarro = "../images/IconesMeuCarro/icon-108x108.png";
+
+const ImagemCarro = "../images/icon-108x108.png";
 
 const HeaderIndex = () => {
     return (

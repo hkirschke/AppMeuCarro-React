@@ -1,18 +1,20 @@
-import React  from 'react';
-import '../App.css'; 
-import { NavLink } from 'react-router-dom';
-import '../NavBar.css';
+import React from "react";
+import {
+    Button
+} from 'reactstrap';
+import "../NavBar.css";
 
 const NavBar = () =>{
-    return (
+    return ( 
     <nav className="NavBar bottom">
-         <div class="buttonGroup mt1 btn-group-toggle" data-toggle="buttons">
-          <NavLink exact to="/" id="btnMeuCarro" class="button navLink" activeClassName="active">Meu Carro</NavLink>
-          <NavLink  to="/Faturas" id="btnFatura" class="button navLink" activeClassName="active">Faturas</NavLink>
-          <NavLink  to="/Contrato" id="btnContrato" class="button navLink" activeClassName="active">Contrato</NavLink>
+         <div className="buttonGroup mt1 btn-group-toggle" data-toggle="buttons">
+          <Button  href="/" id="btnMeuCarro" className="button btn-outline-success half primary btn-secondary-white navLink" >Meu Carro</Button>
+          <Button  href="/Faturas" id="btnFatura" className="button btn-outline-success half primary btn-secondary-white navLink" >Faturas</Button>
+          <Button  href="/Contrato" id="btnContrato" className="button btn-outline-success half primary btn-secondary-white navLink">Contrato</Button>
         </div> 
     </nav>
     );
 };
+
 
 export default NavBar;
