@@ -1,6 +1,8 @@
 import FaturaObj from './models/fatura.json';
 import Fatura from './Fatura';
 
+//Renderiza o componente Faturas, usado o subcomponente Fatura, enviando as faturas carregadas
+//do arquivo fatura.json
 const Faturas = () => { 
   return(
     <div className="component"> 

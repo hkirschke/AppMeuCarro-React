@@ -4,6 +4,7 @@ import {
 } from 'reactstrap';
 import "../NavBar.css";
 
+//Renderiza o componente de Navbar para a navegação entre as telas da aplicação.
 const NavBar = () =>{
     return ( 
     <nav className="NavBar bottom">

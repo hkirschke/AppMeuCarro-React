@@ -5,6 +5,8 @@ var cssStatusFatura = "bg-light text-dark";
 var statusFatura = "Em Aberto";
 var valorFatura = 0;
 
+
+//Renderiza cada fatura passada como propriedade através do componente faturas.
 const Fatura = (props) => {
     CarregaModelMockFatura(props.fatura);
     return ( 
@@ -17,7 +19,7 @@ const Fatura = (props) => {
   };
 
 //Carrega informações da fatura e realizando o calculo caso esteja vencida
-//inserindo dinamicamente HTML na index.html
+//Define qual classe CSS será aplicada para o card de fatura
 //fonte dos dados: /fatura.json
 function CarregaModelMockFatura(fatura){ 
     let porcJuros = ContratoObj.JurosVencimento;  

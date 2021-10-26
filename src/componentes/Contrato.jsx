@@ -1,6 +1,7 @@
 import React from 'react';
 import ContratoObj from './models/contrato.json';
 
+//Renderiza o componente Contrato, carregando dados do arquivo contrato.json
 const Contrato = () => { 
   return (
   <div className="componentContent">
